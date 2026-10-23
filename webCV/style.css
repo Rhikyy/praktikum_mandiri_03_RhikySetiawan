@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #202923;
+  color: #e8e9df;
+  margin: 0;
+  padding: 30px 0;
+  line-height: 1.6;
+}
+
+main {
+  width: 800px;
+  margin: 0 auto;
+  background-color: #2d3931;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  background-color: #39483d;
+  padding: 20px;
+  border-radius: 8px;
+  border-bottom: 3px solid #a3ad87;
+  margin-bottom: 20px;
+}
+
+.header-title {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #a3ad87;
+  font-weight: bold;
+  margin: 0 0 4px 0;
+}
+
+header h1 {
+  margin: 0 0 5px 0;
+  color: #ffffff;
+  font-size: 26px;
+}
+
+.header-sub {
+  color: #c0c8b8;
+  margin: 0;
+  font-size: 14px;
+}
+
+section {
+  padding: 18px 0;
+  border-bottom: 1px solid #435246;
+}
+
+h2 {
+  color: #c5d0a9;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #526052;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+h3 {
+  color: #e8e9df;
+  font-size: 15px;
+  margin: 12px 0 4px 0;
+}
+
+p {
+  margin: 4px 0;
+}
+
+a {
+  color: #d5c69a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Profil Section */
+.profil {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.foto {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid #899779;
+  flex-shrink: 0;
+}
+
+.profil-info {
+  flex: 1;
+}
+
+.kategori {
+  margin-left: auto;
+}
+
+.badges {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.badge {
+  background-color: #435246;
+  color: #d5dcc1;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  border: 1px solid #526052;
+  text-align: center;
+}
+
+/* Keahlian Badges */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.skill-pill {
+  background-color: #39483d;
+  color: #e8e9df;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 13px;
+  border: 1px solid #526052;
+}
+
+/* Video Spotlight (1 Baris Penuh) */
+.video-spotlight {
+  background-color: #39483d;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.video-spotlight h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #c5d0a9;
+}
+
+.video-spotlight video {
+  border-radius: 6px;
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  background-color: #000000;
+}
+
+/* Galeri & Lampiran (Di Bawah Video) */
+.media-bawah {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.galeri,
+.lampiran {
+  flex: 1;
+  min-width: 0;
+  background-color: #39483d;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.galeri h3,
+.lampiran h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Galeri 2x2 agar ukuran foto lebih luas */
+.galeri-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.galeri-grid img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.lampiran-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.lampiran-list a {
+  background-color: #2d3931;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  display: block;
+  border: 1px solid #435246;
+}
+
+.lampiran-list a:hover {
+  background-color: #435246;
+}
+
+footer {
+  text-align: center;
+  color: #b9c1b3;
+  padding-top: 20px;
+  font-size: 13px;
+}
